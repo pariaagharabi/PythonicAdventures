@@ -150,28 +150,3 @@ class LinkedList:
             return (None, None)
 
         return (prev, cur)
-
-
-print("--------------------Drive the code--------------------------")
-llist = LinkedList()
-
-llist.append("A")
-llist.append("B")
-llist.append("C")
-llist.append("D")
-llist.append("E")
-
-llist.print_list()
-
-# n = llist.find("A")
-
-# print(None if n == None else n.data)
-
-# llist.insert_after_node(n, "D")
-print("-"*50)
-# llist.print_list()
-
-llist.reverse_linked_list()
-llist.print_list()
-
-print(llist.pos(2))
