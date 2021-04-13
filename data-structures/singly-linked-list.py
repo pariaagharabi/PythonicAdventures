@@ -14,6 +14,19 @@ class LinkedList:
             print(cur_node.data)
             cur_node = cur_node.next
 
+    def pos(self, key):
+        cur_node = self.head
+        counter_pos = 0
+
+        while cur_node is not None:
+            if cur_node.data == key:
+                return counter_pos
+
+            cur_node = cur_node.next
+            counter_pos += 1
+
+        return -1
+
     def length(self):
         counter_len = 0
         cur_node = self.head
