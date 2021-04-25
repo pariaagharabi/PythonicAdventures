@@ -1,4 +1,7 @@
 def binary_search(lst, key):
+    if lst is None or key is None:
+        return -1
+
     left = 0
     right = len(lst) - 1
 
