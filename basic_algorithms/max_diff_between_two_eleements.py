@@ -1,7 +1,8 @@
 # Maximum difference between two elements in an array
 
 
-def maximum_difference_two_elements(lst, lst_size):
+def maximum_difference_two_elements(lst):
+    lst_size = len(lst)
     max_diff_two_eles = lst[1] - lst[0]
 
     for element in range(0, lst_size):
