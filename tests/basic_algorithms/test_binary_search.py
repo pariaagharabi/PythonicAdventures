@@ -21,17 +21,8 @@ def test_when_element_not_exists_should_return_negative_number(sample_list, key)
     assert result < 0
 
 
-def test_when_list_is_empty_should_return_negative_number():
-    lst = []
-
-    result = binary_search(lst, 1)
-
-    assert result < 0
-
-
-def test_when_list_isNone_should_return_negative_number():
-    lst = None
-
+@pytest.mark.parametrize("lst", [None, []])
+def test_when_list_is_blank_should_return_negative_number(lst):
     result = binary_search(lst, 1)
 
     assert result < 0
