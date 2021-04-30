@@ -3,7 +3,7 @@
 
 def sum_number(number):
 
-    if number < 1:
+    if number < 0:
         raise ValueError(
             "Invalid number, the number should be a positive number!")
 
