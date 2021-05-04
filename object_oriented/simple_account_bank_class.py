@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+# Create a Class Phonebook that should keep A list of contacts. Derive the class Contact from two base classes Person and Address
 
 
 class Bank_Account(ABC):
@@ -52,21 +53,3 @@ class Chequing_Account(Bank_Account):
     def display(self):
         super().display()
         print(f"Number of transactions: {self.number_of_transactions}")
-
-
-# # creating an object of class
-# my_account = Bank_Account()
-my_chequing = Chequing_Account(100)
-
-# # Calling functions with that class object
-
-# my_account.deposit(10)
-my_chequing.deposit(15)
-my_chequing.display()
-# my_account.display()
-
-my_chequing.deposit(25)
-my_chequing.display()
-
-my_chequing.withdraw(250)
-my_chequing.display()
