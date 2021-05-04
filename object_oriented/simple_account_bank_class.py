@@ -1,5 +1,4 @@
 from abc import ABC, abstractmethod
-# Create a Class Phonebook that should keep A list of contacts. Derive the class Contact from two base classes Person and Address
 
 
 class Bank_Account(ABC):

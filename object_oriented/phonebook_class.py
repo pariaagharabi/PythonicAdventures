@@ -1,7 +1,5 @@
 import os
-"""
-    Create A Python Class Phonebook That Should Keep A List Of Contacts. Derive The Class Contact From Two Base Classes Person And Address And Use Their Methods To Print Out The Contact Information. The Structure Of The Module Is Given Below. Complete The Code And Add Functions To Search And Sort Addresses. Test The Code By Creating A Phone Book With At-Least 10 Addresses And Display The Same.
-"""
+# Create a Class Phonebook that should keep A list of contacts. Derive the class Contact from two base classes Person and Address
 
 
 class Person:
@@ -87,14 +85,3 @@ class Phonebook:
     def show(self):
         for contact in self.__contacts:
             contact.display()
-
-
-c1 = Contact('Hans Hanson', 'hans@hanshanson.com',
-             "1234567890", "plymouth", "Montreal")
-c2 = Contact('Paria', 'paria@gmail.com',
-             "5146772141", "brittany", "mont-royal")
-
-phonebook = Phonebook()
-phonebook.add(c1)
-phonebook.add(c2)
-phonebook.show()
